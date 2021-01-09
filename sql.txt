@@ -11,6 +11,7 @@ CREATE TABLE track
 
 CREATE TABLE data
 (
+  name TEXT NOT NULL,
   img TEXT NOT NULL,
   description TEXT,
   gameSrc TEXT NOT NULL,
@@ -18,6 +19,8 @@ CREATE TABLE data
   FOREIGN KEY (trackID) REFERENCES track(trackID)
 );
 
-INSERT INTO track (name,date,description) values('Game Development Track Level 1 2019','2020-9-1','');
-INSERT INTO track (name,date,description) values('Game Development Track Level 1 2020','2020-9-1','');
-INSERT INTO track (name,date,description) values('Game Development Track Level 2 2020','2020-9-1','');
+INSERT INTO `track` (`name`,`date`,`description`) values('Game Development Track Level 1 2019','2020-9-1','');
+INSERT INTO `track` (`name`,`date`,`description`) values('Game Development Track Level 1 2020','2020-9-1','');
+INSERT INTO `track` (`name`,`date`,`description`) values('Game Development Track Level 2 2020','2020-9-1','');
+INSERT INTO `data`  (`name`,`img`,`gameSrc`,`description`,`trackID`) values('Code Valley','test.jpg','codeValley/index.html','',1);
+INSERT INTO `data`  (`name`,`img`,`gameSrc`,`description`,`trackID`) values('Color Switch','test.jpg','colorSwitch/index.html','',1);
