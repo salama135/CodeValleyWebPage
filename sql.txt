@@ -1,17 +1,23 @@
+Create Database codeValley;
+use codeValley;
 CREATE TABLE track
 (
-  trackID INT NOT NULL,
-  name VARCHAR(10000) NOT NULL,
+  trackID INT NOT NULL AUTO_INCREMENT,
+  name TEXT NOT NULL,
   date DATE NOT NULL,
-  description VARCHAR(10000) NOT NULL,
+  description TEXT,
   PRIMARY KEY (trackID)
 );
 
 CREATE TABLE data
 (
-  img VARCHAR(10000) NOT NULL,
-  description VARCHAR(10000) NOT NULL,
-  gameSrc VARCHAR(10000) NOT NULL,
+  img TEXT NOT NULL,
+  description TEXT,
+  gameSrc TEXT NOT NULL,
   trackID INT NOT NULL,
   FOREIGN KEY (trackID) REFERENCES track(trackID)
 );
+
+INSERT INTO track (name,date,description) values('Game Development Track Level 1 2019','2020-9-1','');
+INSERT INTO track (name,date,description) values('Game Development Track Level 1 2020','2020-9-1','');
+INSERT INTO track (name,date,description) values('Game Development Track Level 2 2020','2020-9-1','');
