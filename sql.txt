@@ -11,16 +11,26 @@ CREATE TABLE track
 
 CREATE TABLE data
 (
-  name TEXT NOT NULL,
   img TEXT NOT NULL,
   description TEXT,
   gameSrc TEXT NOT NULL,
   trackID INT NOT NULL,
   FOREIGN KEY (trackID) REFERENCES track(trackID)
 );
-
+INSERT INTO `track` (`name`,`date`,`description`) values('Android Development Track Level 1 2019','2020-9-1','');
+INSERT INTO `track` (`name`,`date`,`description`) values('Android Development Track Level 1 2020','2020-9-1','');
+INSERT INTO `track` (`name`,`date`,`description`) values('Android Development Track Level 2 2020','2020-9-1','');
 INSERT INTO `track` (`name`,`date`,`description`) values('Game Development Track Level 1 2019','2020-9-1','');
 INSERT INTO `track` (`name`,`date`,`description`) values('Game Development Track Level 1 2020','2020-9-1','');
 INSERT INTO `track` (`name`,`date`,`description`) values('Game Development Track Level 2 2020','2020-9-1','');
-INSERT INTO `data`  (`name`,`img`,`gameSrc`,`description`,`trackID`) values('Code Valley','test.jpg','codeValley/index.html','',1);
-INSERT INTO `data`  (`name`,`img`,`gameSrc`,`description`,`trackID`) values('Color Switch','test.jpg','colorSwitch/index.html','',1);
+
+INSERT INTO `data`  (`img`,`gameSrc`,`description`,`trackID`) values('colorSwitch/background.jpg','colorSwitch/index.html','Color Switch is a popular game
+for those who doesn''t know it the goal is to get to the end by matching the ball color with the circle color',5);
+
+INSERT INTO `data`  (`img`,`gameSrc`,`description`,`trackID`) values('ColorFun/background.jpg','ColorFun/index.html','It is a group of games designed to 
+teach children colors
+The first: different questions about colors 
+The second: coloring drawings
+The third: divided into two parts
+Either he is an individual player who collects the colors that appear in the color bank within a minute
+Or two players competing to collect the colors that appear in the color bank within a minute',5);

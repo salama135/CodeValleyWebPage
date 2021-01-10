@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Team_1B_2020_class2",
+"productVersion": "0.1",
+"dataUrl": "ColorFun.data.unityweb",
+"wasmCodeUrl": "ColorFun.wasm.code.unityweb",
+"wasmFrameworkUrl": "ColorFun.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.0f1"
+}

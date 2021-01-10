@@ -37,12 +37,12 @@ function getTrackData($ID)
     while ($row = $result->fetch_assoc()) {
       echo '<div class="col">
       <div class="card shadow-sm">
-        <img src="' . $row["img"] . '" class="img-fluid" alt="Responsive image">
+        <img src="games/' . $row["img"] . '" class="img-fluid" alt="Responsive image">
         <div class="card-body">
           <p class="card-text">' . $row["description"] . '</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <a href="' . $row["gameSrc"] . '" class="btn btn-primary">Play</a>
+              <a href="games/' . $row["gameSrc"] . '" class="btn btn-primary">Play</a>
             </div>
           </div>
         </div>
