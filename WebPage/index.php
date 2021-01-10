@@ -34,7 +34,6 @@
   <style type="text/css">
     body {
       background: #eee;
-      margin-top: 20px;
     }
 
     .hori-timeline .events {
@@ -71,8 +70,8 @@
     @media (min-width: 1140px) {
       .hori-timeline .events .event-list {
         display: inline-block;
-        width: 24%;
-        padding-top: 45px;
+        width: 15%;
+        padding-top: 36px;
       }
 
       .hori-timeline .events .event-list .event-date {
@@ -101,6 +100,7 @@
       margin-bottom: 24px;
       -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, .44);
       box-shadow: 0 0 13px 0 rgba(236, 236, 241, .44);
+      
     }
   </style>
 
@@ -113,7 +113,7 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <img src="icon.png" alt="Responsive image" class="img-thumbnail">
+          <img src="icon.svg" style="width : 50px;height:50px;" alt="Responsive image">
           <strong>Trainopia</strong>
         </a>
 
@@ -175,13 +175,7 @@
 
   </main>
 
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Back to top</a>
-      </p>
-    </div>
-  </footer>
+ 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
